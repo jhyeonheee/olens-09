@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_가운데스타일변화</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/04.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                centeredSlides: false,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    speed: 3000
+                },
+            });/* .mySwiper end*/
+
+
+            var swiper = new Swiper(".scale-swiper", {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                centeredSlides: false,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                    speed: 1000
+                },
+            });/* .s-02 end*/
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <section class="section-01">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/blue(1).jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 1</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/blue(2).jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 2</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/blue(3).jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 3</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/blue(5).jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 4</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/blue(4).jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 5</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/blue(6).jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 6</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide end -->
+
+            </div><!-- .swiper-wrapper end -->
+
+            <div class="swiper-pagination"></div>
+        </div><!-- .swiper mySwiper end -->
+
+    </section><!-- .section-01 end -->
+
+    <section class="section-02">
+        <div class="swiper scale-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="img/red(1).jpg" alt="">
+                    <p>swiper 1</p>
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/red(2).jpg" alt="">
+                    <p>swiper 2</p>
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/red(3).jpg" alt="">
+                    <p>swiper 3</p>
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/red(4).jpg" alt="">
+                    <p>swiper 4</p>
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/red(5).jpg" alt="">
+                    <p>swiper 5</p>
+                </div><!-- .swiper-slide end -->
+
+                <div class="swiper-slide">
+                    <img src="img/red(6).jpg" alt="">
+                    <p>swiper 6</p>
+                </div><!-- .swiper-slide end -->
+
+            </div><!-- .swiper-wrapper end -->
+
+            <div class="swiper-pagination"></div>
+        </div><!-- .swiper scale-swiper end -->
+    </section><!-- .section-02 end -->
+
+</body>
+
+</html>
